@@ -7,12 +7,18 @@ The HTML page in question is for a hypothetical cake design online business.
 Preview:
 
 Index page:<br>
-!["index.html"](https://github.com/Lunrage/rest_api/blob/main/images/index_page.png)
+<p align="center">
+  <img max-width="400" src="https://github.com/Lunrage/rest_api/blob/main/images/index_page.png" alt="index.html">
+</p>
 <br>
 <br>
 Cakes page:<br>
-!["cakes.html"](https://github.com/Lunrage/rest_api/blob/main/images/cakes_page.png)
+<p align="center">
+  <img max-width="400" src="https://github.com/Lunrage/rest_api/blob/main/images/cakes_page.png" alt="cakes.html">
+</p>
 <br>
 <br>
 Add New Cake page:<br>
-!["add_cake.html"](https://github.com/Lunrage/rest_api/blob/main/images/add_cake_page.png)
+<p align="center">
+  <img max-width="400" src="https://github.com/Lunrage/rest_api/blob/main/images/add_cake_page.png" alt="add_cake.html">
+</p>
