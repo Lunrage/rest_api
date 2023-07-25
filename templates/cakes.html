@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cake Designs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='cakes.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='cakes_styles.css')}}" />
+</head>
+<body>
+    <div class="page-header">Cake Designs</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="page-body">
+        <div>
+            <div class="title">
+                Browse our delicious cakes:
+            </div>
+            <br>
+            <br>
+            <div id="display_cakes_div">
+                <input type="hidden" id="cakes_json" name="cakes_Id_json" value="{{cakes}}"/>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div>
+            <form action="/add_cake" method="get">
+                <button class="submit-button" type="submit">Add a New Cake</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

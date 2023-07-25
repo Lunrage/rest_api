@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cake Designs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='update_cake.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='cakes_styles.css')}}" />
+</head>
+<body>
+    <div class="page-header">Cake Designs</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="page-body">
+        <div class="title">
+            Please update the following information:
+        </div>
+        <br>
+        <br>
+        <div>
+            <form id="updateform">
+                <label>Cake name:</label><br>
+                <input type="text" id="cakenameid" name="name" value="">
+                <br>
+                <br>
+                <label>Cake description:</label>
+                <br>
+                <textarea id="cakedescrid" name="description" rows="4" cols="60" placeholder="Describe your cake here ...">
+                </textarea>
+                <br>
+                <br>
+                <label>Cake price:</label><br>
+                <input type="text" id="cakepriceid" name="price" value="">
+                <br>
+                <br>
+                <input type="hidden" id="cakeid" name="cakeitemNum" value="">
+                <input type="hidden" id="cake_json" name="cake" value="{{cake}}">
+                <div>
+                <button class="cancel-button" type="button" name="cancelform" onclick="cancelUpdate();">Cancel</button>
+                <button class="submit-button" type="button" onclick="SaveUpdates();">Save Changes</button> 
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

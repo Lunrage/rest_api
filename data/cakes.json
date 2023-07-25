@@ -1,0 +1,23 @@
+{
+"cakes":[{
+    "name": "Chocolate cake",
+    "price": "50.25",
+    "description": "A declicious cake made enterily of sweet, dark chocolate."
+},
+{
+    "name": "Strawberry Shortcake",
+    "price": "25.99",
+    "description": "A marvelous cake made of fresh strawberries and cream."
+},
+{
+    "name": "Banana cake",
+    "price": "22.69",
+    "description": "A nice and nutritious cake, made of banana and persian flour."
+},
+{
+    "name": "Coconut cake",
+    "price": "29.99",
+    "description": "Made with coconut shaving and coconut water, this tropical cake is a scrumptious and fulfilling confection."
+}
+]
+}

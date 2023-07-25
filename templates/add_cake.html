@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cake Designs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='cakes_styles.css')}}" />
+</head>
+<body>
+    <script>
+        function cancelNewCake(){
+            window.location.href = '/cakes';
+        }
+    </script>
+    <div class="page-header">Cake Designs</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="page-body">
+        <div class="title">
+            Insert New Cake:
+        </div>
+        <br>
+        <br>
+        <div>
+            <form action="http://localhost:5000/cakes" method="post">
+                <label>Cake name:</label><br>
+                <input type="text" id="cakenameid" name="name" placeholder="Enter cake name here ..."><br><br>
+                <label>Cake description:</label><br>
+                <textarea id="cakedescrid" name="description" rows="4" cols="60" placeholder="Describe your cake here ..."></textarea><br><br>
+                <label>Cake price:</label><br>
+                <input type="text" id="cakepriceid" name="price"><br><br>
+                <div>
+                <button class="cancel-button" type="button" name="cancelform" onclick="cancelNewCake();">Cancel</button>
+                <button class="reset-button" type="reset" name="clearform">Clear</button>
+                <button class="submit-button" type="submit">Save Cake</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
